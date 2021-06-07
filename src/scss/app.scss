@@ -1,0 +1,13 @@
+//Base
+@import 'base/normalizer';
+@import 'base/globals.scss';
+@import 'base/fonts';
+@import 'base/variables';
+@import 'base/mixins';
+
+//Layout
+@import 'layout/header';
+@import 'layout/banner';
+@import 'layout/cards';
+@import 'layout/aside';
+@import 'layout/articles';

@@ -1,0 +1,62 @@
+header {
+    width: 100%;
+    height: 70px;
+    background-color: #000;
+    font-family: 'BebasNeue';
+    color: #fff;
+    #logo {
+        float: left;
+        width: 200px;
+        height: 55px;
+        margin-top: 8px;
+        margin-left: 20px;
+        background-color: $lightBlue;
+        text-align: center;
+        letter-spacing: 1px;
+        cursor: pointer;
+        overflow: hidden;
+        transition: all 0.3s;
+        .gear{
+            font-family: 'WebSymbols';
+            display: block;
+            float: left;
+            font-size: 30px;
+            margin-top: 8px;
+            margin-left: 26px;
+        }
+        h3 {
+            display: block;
+            font-size: 40px;
+            float: right;
+            margin-top: 5px;
+            margin-right: 65px;
+            transition: all 0.3s;
+        }
+    }
+    nav {    
+        ul {
+            float: right;
+            height: 70px;
+            margin-top: 0px;
+            padding-left: 0px;
+            list-style: none;
+            li {
+                font-size: 24px;
+                display: inline-block;
+                margin: 0px 20px;
+                letter-spacing: 1px;
+                line-height: 70px;
+                a {
+                    display: block;
+                    color: #fff;
+                    text-decoration: none;
+                    transition: all 0.2s;
+                    &:hover {
+                        color: $lightBlue ;
+                        transform: scale(1.2, 1.2);
+                    }
+                }
+            }
+        }    
+    }
+}
