@@ -16,6 +16,17 @@ header {
         cursor: pointer;
         overflow: hidden;
         transition: all 0.3s;
+        &:hover {
+            border-radius: 2px;
+            color: #000;
+            background: #ccc;
+            .gear {
+                animation: fromBellow 0.5s linear;
+            }
+            h3 {
+                animation: fromRight 0.3s linear;
+            }
+        }
         .gear{
             font-family: 'WebSymbols';
             display: block;
@@ -23,6 +34,11 @@ header {
             font-size: 30px;
             margin-top: 8px;
             margin-left: 26px;
+            /*animation*/
+            animation-name: rotate-gear;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;           
         }
         h3 {
             display: block;

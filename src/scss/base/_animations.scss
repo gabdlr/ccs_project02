@@ -1,0 +1,111 @@
+/*Animations*/
+@keyframes rotate-gear{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes fromBellow {
+    0%{
+        transform: translateY(0%);
+    }
+    50%{
+        transform: translateY(200%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+@keyframes fromRight {
+    from {
+        transform: translateX(200%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+@keyframes backBanner {
+    0%{
+        background-position: 0px 0px;
+    }
+    100% {
+        background-position: -200px -200px;
+    }
+}
+
+@keyframes showText {
+    0%{
+        transform: translateX(-600%) scale(5,5);
+        opacity: 1;
+    }
+    50%{
+        transform: translateX(600%) scale(5,5);
+        opacity: 1;
+    }
+    75%{
+        transform: translateX(-600%) scale(5,5);
+        text-shadow: none;
+        color: transparent;
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0%) scale(1,1);
+        text-shadow: 2px 2px 1px #000;;
+        color: #fff;
+        opacity: 1;
+    }
+
+}
+
+@keyframes showIcon {
+    from{
+        transform: translateY(-200%);
+    }
+    to{
+        transform: translateY(0%);
+    }
+}
+
+@keyframes showCategory {
+    from{
+        transform: translateY(-300%);
+        color: #000;
+    }
+    to{
+        transform: translateY(0%);
+        color: #fff;
+    }
+}
+
+@keyframes showDescription {
+    from{
+        transform: translateX(-300%);
+        color: #000;
+    }
+    to{
+        transform: translateX(0%);
+        color: #fff;
+    }
+}
+
+@keyframes blink {
+    0%{
+        border: 10px solid #37bcf9;        
+    }
+    25%{
+        border: 10px solid green;        
+    }
+    50%{
+        border: 10px solid yellow;        
+    }
+    75%{
+        border: 10px solid #fff;
+    }
+    100%{
+        border: 10px solid #37bcf9;
+    }
+}
