@@ -2,9 +2,13 @@ body {
     background: url('../../../build/img/pattern.png');
 }
 .wrap {
-    width: 1200px;
+    width: 90%;
     margin: 0px auto;
+    @include desktop {
+        width: 1200px;
+    }
 }
+
 .icon {
     font-family: 'WebSymbols';
     margin-top: 0px;

@@ -53,9 +53,12 @@ footer {
         letter-spacing: 2px;
         text-align: center;
         font-family: 'BebasNeue';
-        font-size: 40px;
+        font-size: 30px;
         line-height: 50px;
         color: black;
+        @include desktop {
+            font-size: 40px;
+        }
     }
     iframe {
         width: 80%;

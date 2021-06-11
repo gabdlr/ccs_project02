@@ -14,12 +14,16 @@
             width: 850px;
             font-family: 'BebasNeue';
             color: #fff;
-            font-size: 45px;
+            font-size: 35px;
             letter-spacing: 2px;
             text-shadow: 2px 2px 1px #000;
             text-align: center;
-            margin: 27px auto;
+            margin: 33px auto;
             animation: showText 10s linear;
+            @include desktop {
+                font-size: 45px;
+                margin: 27px auto;           
+            }
         } 
     }
 }   
