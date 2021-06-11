@@ -1,49 +1,72 @@
 #cards {
-        padding-left: 50px;
+        width: 80%;
+        margin: 0px auto;
+        text-align: center;
+        @include tablet {
+            padding-left: 50px;
+            }
         @include desktop {
             padding-left: 0px;
         }
       .card {
-          float: left;
-          width: 205px;
-          height: 305px;
+          display: inline-block;
+          width: 100px;
+          height: 100px;
+          padding: 5px;
           background: #fff;
           overflow: hidden;
-          margin: 10px 5px;
           border: 1px solid #ccc;
           box-shadow: 1px 1px 2px #ddd;
           cursor: pointer;
           transition: all 0.3s;
-          @include desktop {
-            margin: 40px 16px 20px;
-          }
+          margin-top: 5px;
+            @include tablet {
+                float: left;
+                width: 205px;
+                height: 305px;
+                margin: 10px 5px;
+            }
+                @include desktop {
+                    margin: 40px 16px 20px;
+                }
           .icon {
               display: block;
               width: 100%;
-              height: 130px;
-              font-size: 50px;
-              line-height: 130px;
+              line-height: 55px;
+              font-size: 30px;
               text-align: center;
               margin: 0px auto;
               transition: all 0.5s;
+              @include tablet {
+                height: 130px;
+                line-height: 130px;
+                font-size: 50px;
+              }
           }
           .category {
-              width: 100%;
-              height: 50px;
+              width: 100%;              
               font-family: 'Trebuchet';
-              font-size: 21px;
+              font-size: 12px;
               font-weight: bold;
               text-align: center;
               color: #00538c;
               margin-bottom: 0px;
               transition: all 0.5s;
+              @include tablet {
+                height: 50px;
+                font-size: 21px;
+              }
           }
           .description {
+              display: none;
               margin: 0px 10px;
               text-align: center;
               color: #0677c2;
               font-family: 'Trebuchet';
               transition: all 0.3s;
+              @include tablet {
+                  display: block;
+              }
           }
           &:hover {
               background-color: #000;

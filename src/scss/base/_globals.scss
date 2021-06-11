@@ -2,11 +2,18 @@ body {
     background: url('../../../build/img/pattern.png');
 }
 .wrap {
+    width: 100%;
+    @include tablet {
     width: 90%;
     margin: 0px auto;
+    }
     @include desktop {
         width: 1200px;
     }
+}
+.new-wrap {
+    width: 100%;
+    margin: 0px auto;
 }
 
 .icon {

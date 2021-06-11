@@ -1,29 +1,40 @@
 #info {
     #banner {
-        width: 95%;
+        width: 80%;
         height: 100px;
-        border: 10px solid #fff;
+        border: 5px solid #fff;
         box-shadow: 0px 0px 2px gray;
         background: url('../../../build/img/bakbaner.png');
-        background-position: -200px -200px;
+        background-position: 0px 0px;
         margin: 20px auto;
         animation: backBanner 10s linear;
         overflow: hidden;
+        @include tablet {
+            background-position: -200px -200px;
+            height: 100px;
+            width: 95%;
+            border: 10px solid #fff;
+        }
         h1 {
             display: block;
-            width: 850px;
+            width: auto;
             font-family: 'BebasNeue';
             color: #fff;
-            font-size: 35px;
-            letter-spacing: 2px;
+            font-size: 25px;           
             text-shadow: 2px 2px 1px #000;
             text-align: center;
-            margin: 33px auto;
-            animation: showText 10s linear;
-            @include desktop {
-                font-size: 45px;
-                margin: 27px auto;           
+            margin: 37px auto;
+            
+            @include tablet {
+                animation: showText 10s linear;
+                letter-spacing: 2px;
+                margin: 33px auto;
+                font-size: 35px;              
             }
+                @include desktop {
+                    font-size: 45px;
+                    margin: 27px auto;           
+                }
         } 
     }
 }   

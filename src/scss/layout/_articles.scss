@@ -1,9 +1,10 @@
 section {
     #articles {
         float: left;
-        width: 90%;
-        margin-left: 30px;
+        width: 100%;
         @include desktop {
+            width: 90%;
+            margin-left: 30px;
             width: 960px;
         }
         h2 {
@@ -20,16 +21,19 @@ section {
             margin-top: 20px;
         }
         article {
-            width: 90%;
+            width: 80%;
             height: auto;
             border: 1px solid #ccc;
-            margin-top: 40px;
-            margin-left: 40px;
-            padding: 10px;
+            margin: 10px auto;
             font-family: 'Trebuchet';
             background: #fff;
             color: #000;
             box-shadow: 1px 1px solid 2px #ddd;
+            @include tablet {
+                width: 90%;
+                margin-left: 40px;
+                padding: 10px; 
+            }
             h4 {
                 display: block;
                 font-size: 23px;
@@ -43,17 +47,20 @@ section {
                 }
             }
             .data {
-                float: right;
                 background: #393d3f;
                 color: #fff;
                 height: 30px;
                 font-size: 13px;
-                line-height: 30px;
-                margin: -10px;
+                line-height: 30px;                
                 padding: 4px;
-                border-radius: 0px 0px 0px 5px;
+                margin-bottom: 10px;
                 span {
                     margin: 5px;
+                }
+                @include tablet {
+                    border-radius: 0px 0px 0px 5px;
+                    float: right;
+                    margin: -10px;
                 }
             }
             p {
@@ -64,15 +71,19 @@ section {
             }
         }
         #blog-linker {
-            width: 90%;
+            width: 80%;
             height: 100px;
-            margin-top: 60px;
-            margin-left: 40px;
-            margin-bottom: 60px;
-            padding: 10px;
+            margin: 30px auto;
             background: #fff;
             border: 1px solid #ccc;
             transition: all 1s;
+            @include tablet {
+                width: 90%;
+                margin-top: 60px;
+                margin-bottom: 60px;
+                margin-left: 40px;
+                padding: 10px;
+            }
             a {
                 display: block;
                 line-height: 100px;
