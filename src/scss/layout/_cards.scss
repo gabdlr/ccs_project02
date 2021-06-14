@@ -1,13 +1,8 @@
 #cards {
-        width: 80%;
+        width: 100%;
         margin: 0px auto;
         text-align: center;
-        @include tablet {
-            padding-left: 50px;
-            }
-        @include desktop {
-            padding-left: 0px;
-        }
+
       .card {
           display: inline-block;
           width: 100px;
@@ -21,13 +16,14 @@
           transition: all 0.3s;
           margin-top: 5px;
             @include tablet {
+                width: 100%;
                 float: left;
                 width: 205px;
                 height: 305px;
-                margin: 10px 5px;
+                margin: 10px 19px;
             }
                 @include desktop {
-                    margin: 40px 16px 20px;
+                    margin: 10px 26px;
                 }
           .icon {
               display: block;
